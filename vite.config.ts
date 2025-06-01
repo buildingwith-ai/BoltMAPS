@@ -7,5 +7,13 @@ export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
+  },
+  define: {
+    global: 'window',
+  },
+  resolve: {
+    alias: {
+      buffer: 'buffer',
+    },
   }
 });
