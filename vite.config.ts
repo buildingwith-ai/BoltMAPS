@@ -6,14 +6,6 @@ export default defineConfig({
   base: '/BoltMAPS/',
   plugins: [react()],
   optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
-  define: {
-    global: 'window',
-  },
-  resolve: {
-    alias: {
-      buffer: 'buffer',
-    },
+    exclude: ['lucide-react']
   }
 });
