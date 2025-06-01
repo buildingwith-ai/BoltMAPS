@@ -10,6 +10,19 @@ interface ShareModalProps {
 }
 
 const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, imageUrl, verseRef }) => {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   if (!isOpen) return null;
   
   return (
@@ -34,22 +47,26 @@ const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, imageUrl, vers
             />
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <button
-              onClick={() => shareViaEmail(imageUrl, verseRef)}
-              className="flex flex-col items-center justify-center p-4 bg-blue-50 hover:bg-blue-100 transition-colors rounded-lg border border-blue-200"
-            >
-              <Mail size={32} className="text-blue-600 mb-2" />
-              <span className="text-sm font-medium text-gray-800">Email</span>
-            </button>
-            
-            <button
-              onClick={() => shareViaSMS(imageUrl, verseRef)}
-              className="flex flex-col items-center justify-center p-4 bg-green-50 hover:bg-green-100 transition-colors rounded-lg border border-green-200"
-            >
-              <MessageSquare size={32} className="text-green-600 mb-2" />
-              <span className="text-sm font-medium text-gray-800">Text Message</span>
-            </button>
+          <div className={`grid gap-3 ${isMobile ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-1'}`}>
+            {isMobile && (
+              <>
+                <button
+                  onClick={() => shareViaEmail(imageUrl, verseRef)}
+                  className="flex flex-col items-center justify-center p-4 bg-blue-50 hover:bg-blue-100 transition-colors rounded-lg border border-blue-200"
+                >
+                  <Mail size={32} className="text-blue-600 mb-2" />
+                  <span className="text-sm font-medium text-gray-800">Email</span>
+                </button>
+                
+                <button
+                  onClick={() => shareViaSMS(imageUrl, verseRef)}
+                  className="flex flex-col items-center justify-center p-4 bg-green-50 hover:bg-green-100 transition-colors rounded-lg border border-green-200"
+                >
+                  <MessageSquare size={32} className="text-green-600 mb-2" />
+                  <span className="text-sm font-medium text-gray-800">Text Message</span>
+                </button>
+              </>
+            )}
             
             <button
               onClick={() => downloadImage(imageUrl, verseRef)}
