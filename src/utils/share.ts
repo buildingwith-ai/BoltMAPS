@@ -12,7 +12,6 @@ interface ReflectionData {
 }
 
 export const generateShareableImage = async (data: ReflectionData): Promise<string> => {
-  // Create a hidden canvas element to render our image
   const canvas = document.createElement('canvas');
   const ctx = canvas.getContext('2d');
   
@@ -20,31 +19,24 @@ export const generateShareableImage = async (data: ReflectionData): Promise<stri
     throw new Error('Could not create canvas context');
   }
   
-  // Set canvas dimensions
   canvas.width = 800;
   canvas.height = 1000;
   
-  // Set background
   ctx.fillStyle = '#f8f9fa';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   
-  // Add header background
   ctx.fillStyle = '#1e3a5f';
   ctx.fillRect(0, 0, canvas.width, 160);
   
-  // Configure text styles
   ctx.textAlign = 'center';
   
-  // Add verse reference
   ctx.font = 'bold 32px serif';
   ctx.fillStyle = 'white';
   ctx.fillText(data.verse.reference, canvas.width / 2, 60);
   
-  // Add verse text
   ctx.font = 'italic 18px serif';
   ctx.fillStyle = 'white';
   
-  // Handle wrapping for verse text
   const wrapText = (text: string, x: number, y: number, maxWidth: number, lineHeight: number) => {
     const words = text.split(' ');
     let line = '';
@@ -70,9 +62,8 @@ export const generateShareableImage = async (data: ReflectionData): Promise<stri
   };
   
   const verseLineCount = wrapText(`"${data.verse.text}"`, canvas.width / 2, 100, 700, 25);
-  let currentY = 160 + 40; // Start after header with padding
+  let currentY = 160 + 40;
   
-  // Add sections
   const addSection = (title: string, content: string) => {
     ctx.font = 'bold 22px sans-serif';
     ctx.fillStyle = '#1e3a5f';
@@ -84,7 +75,7 @@ export const generateShareableImage = async (data: ReflectionData): Promise<stri
     ctx.fillStyle = '#333';
     
     const contentLineCount = wrapText(content || '[No response]', 50, currentY, 700, 25);
-    currentY += contentLineCount * 25 + 40; // Add padding after content
+    currentY += contentLineCount * 25 + 40;
   };
   
   addSection('Meaning/Paraphrase:', data.meaning);
@@ -92,7 +83,6 @@ export const generateShareableImage = async (data: ReflectionData): Promise<stri
   addSection('Prayer: Jesus,', data.prayer);
   addSection('Share the Story:', data.story);
   
-  // Add footer
   ctx.fillStyle = '#1e3a5f';
   ctx.fillRect(0, canvas.height - 60, canvas.width, 60);
   ctx.fillStyle = 'white';
@@ -100,47 +90,15 @@ export const generateShareableImage = async (data: ReflectionData): Promise<stri
   ctx.textAlign = 'center';
   ctx.fillText('Reflection created with MAPS Guide', canvas.width / 2, canvas.height - 30);
   
-  // Convert canvas to data URL
   return canvas.toDataURL('image/png');
-};
-
-export const shareViaEmail = async (imageUrl: string, verseRef: string) => {
-  try {
-    // Convert data URL to Blob
-    const response = await fetch(imageUrl);
-    const blob = await response.blob();
-    
-    // Create file from blob
-    const file = new File([blob], `reflection-${verseRef.replace(/\s+/g, '-')}.png`, { type: 'image/png' });
-    
-    // Use native share if available and on mobile
-    if (navigator.share && isMobile()) {
-      await navigator.share({
-        title: `My Reflection on ${verseRef}`,
-        text: `Here's my reflection on ${verseRef}.`,
-        files: [file]
-      });
-    } else {
-      // Fallback to mailto link
-      const subject = encodeURIComponent(`My Reflection on ${verseRef}`);
-      const body = encodeURIComponent(`Here's my reflection on ${verseRef}. \n\n(Image is attached to this email)`);
-      window.location.href = `mailto:?subject=${subject}&body=${body}`;
-    }
-  } catch (error) {
-    console.error('Error sharing via email:', error);
-  }
 };
 
 export const shareViaSMS = async (imageUrl: string, verseRef: string) => {
   try {
-    // Convert data URL to Blob
     const response = await fetch(imageUrl);
     const blob = await response.blob();
-    
-    // Create file from blob
     const file = new File([blob], `reflection-${verseRef.replace(/\s+/g, '-')}.png`, { type: 'image/png' });
     
-    // Use native share if available
     if (navigator.share) {
       await navigator.share({
         title: `My Reflection on ${verseRef}`,
@@ -148,7 +106,6 @@ export const shareViaSMS = async (imageUrl: string, verseRef: string) => {
         files: [file]
       });
     } else {
-      // Fallback to SMS link with just text
       const smsBody = encodeURIComponent(`My reflection on ${verseRef}`);
       window.location.href = `sms:?&body=${smsBody}`;
     }
@@ -157,11 +114,32 @@ export const shareViaSMS = async (imageUrl: string, verseRef: string) => {
   }
 };
 
-export const downloadImage = (imageUrl: string, verseRef: string) => {
-  const a = document.createElement('a');
-  a.href = imageUrl;
-  a.download = `reflection-${verseRef.replace(/\s+/g, '-')}.png`;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
+export const downloadImage = async (imageUrl: string, verseRef: string) => {
+  try {
+    const response = await fetch(imageUrl);
+    const blob = await response.blob();
+    
+    if (isMobile()) {
+      // For mobile, use the native share API with download option
+      const file = new File([blob], `reflection-${verseRef.replace(/\s+/g, '-')}.png`, { type: 'image/png' });
+      if (navigator.share) {
+        await navigator.share({
+          files: [file]
+        });
+        return;
+      }
+    }
+    
+    // Fallback to traditional download
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `reflection-${verseRef.replace(/\s+/g, '-')}.png`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  } catch (error) {
+    console.error('Error downloading image:', error);
+  }
 };
