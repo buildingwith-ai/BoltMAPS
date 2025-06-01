@@ -1,3 +1,5 @@
+import { isMobile } from './utils';
+
 interface ReflectionData {
   verse: {
     reference: string;
@@ -102,38 +104,56 @@ export const generateShareableImage = async (data: ReflectionData): Promise<stri
   return canvas.toDataURL('image/png');
 };
 
-export const shareViaEmail = (imageUrl: string, verseRef: string) => {
-  const subject = encodeURIComponent(`My Reflection on ${verseRef}`);
-  const body = encodeURIComponent(`Here's my reflection on ${verseRef}. \n\n(Image is attached to this email)`);
-  
-  // Create a temporary link to download the image
-  const a = document.createElement('a');
-  a.href = `mailto:?subject=${subject}&body=${body}`;
-  a.click();
+export const shareViaEmail = async (imageUrl: string, verseRef: string) => {
+  try {
+    // Convert data URL to Blob
+    const response = await fetch(imageUrl);
+    const blob = await response.blob();
+    
+    // Create file from blob
+    const file = new File([blob], `reflection-${verseRef.replace(/\s+/g, '-')}.png`, { type: 'image/png' });
+    
+    // Use native share if available and on mobile
+    if (navigator.share && isMobile()) {
+      await navigator.share({
+        title: `My Reflection on ${verseRef}`,
+        text: `Here's my reflection on ${verseRef}.`,
+        files: [file]
+      });
+    } else {
+      // Fallback to mailto link
+      const subject = encodeURIComponent(`My Reflection on ${verseRef}`);
+      const body = encodeURIComponent(`Here's my reflection on ${verseRef}. \n\n(Image is attached to this email)`);
+      window.location.href = `mailto:?subject=${subject}&body=${body}`;
+    }
+  } catch (error) {
+    console.error('Error sharing via email:', error);
+  }
 };
 
-export const shareViaSMS = (imageUrl: string, verseRef: string) => {
-  // For mobile devices, we can try to use the Web Share API if available
-  if (navigator.share) {
-    fetch(imageUrl)
-      .then(res => res.blob())
-      .then(blob => {
-        const file = new File([blob], `reflection-${verseRef.replace(/\s+/g, '-')}.png`, { type: 'image/png' });
-        navigator.share({
-          title: `My Reflection on ${verseRef}`,
-          text: `Here's my reflection on ${verseRef}.`,
-          files: [file],
-        }).catch(error => {
-          console.error('Error sharing:', error);
-          // Fallback for devices that don't support file sharing
-          const smsBody = encodeURIComponent(`My reflection on ${verseRef}`);
-          window.open(`sms:?&body=${smsBody}`);
-        });
+export const shareViaSMS = async (imageUrl: string, verseRef: string) => {
+  try {
+    // Convert data URL to Blob
+    const response = await fetch(imageUrl);
+    const blob = await response.blob();
+    
+    // Create file from blob
+    const file = new File([blob], `reflection-${verseRef.replace(/\s+/g, '-')}.png`, { type: 'image/png' });
+    
+    // Use native share if available
+    if (navigator.share) {
+      await navigator.share({
+        title: `My Reflection on ${verseRef}`,
+        text: `Here's my reflection on ${verseRef}.`,
+        files: [file]
       });
-  } else {
-    // Fallback for browsers that don't support Web Share API
-    const smsBody = encodeURIComponent(`My reflection on ${verseRef}`);
-    window.open(`sms:?&body=${smsBody}`);
+    } else {
+      // Fallback to SMS link with just text
+      const smsBody = encodeURIComponent(`My reflection on ${verseRef}`);
+      window.location.href = `sms:?&body=${smsBody}`;
+    }
+  } catch (error) {
+    console.error('Error sharing via SMS:', error);
   }
 };
 
