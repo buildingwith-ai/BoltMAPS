@@ -11,7 +11,7 @@ export default defineConfig({
   define: {
     global: 'window',
     'process.env': {},
-    Buffer: ['buffer', 'Buffer']
+    Buffer: 'Buffer'
   },
   resolve: {
     alias: {
