@@ -318,8 +318,12 @@ const verses: { [key: string]: Verse } = {
 };
 
 export const getTodayVerse = (): Verse => {
-  const today = new Date();
-  const dateKey = today.toISOString().split('T')[0];
+  // Get current date in CST
+  const now = new Date();
+  const cstOffset = -6; // CST is UTC-6
+  const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+  const cstTime = new Date(utc + (3600000 * cstOffset));
+  const dateKey = cstTime.toISOString().split('T')[0];
   
   // Return default verse if no verse is found for today
   if (!verses[dateKey]) {
