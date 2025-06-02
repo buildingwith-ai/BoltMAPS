@@ -318,12 +318,14 @@ const verses: { [key: string]: Verse } = {
 };
 
 export const getTodayVerse = (): Verse => {
-  // Get current date in CST
+  // Create date object for current time
   const now = new Date();
-  const cstOffset = -6; // CST is UTC-6
-  const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-  const cstTime = new Date(utc + (3600000 * cstOffset));
-  const dateKey = cstTime.toISOString().split('T')[0];
+  
+  // Convert to CST (UTC-5 during daylight saving, UTC-6 during standard time)
+  const cst = new Date(now.toLocaleString('en-US', { timeZone: 'America/Chicago' }));
+  const dateKey = cst.getFullYear() + '-' + 
+                 String(cst.getMonth() + 1).padStart(2, '0') + '-' + 
+                 String(cst.getDate()).padStart(2, '0');
   
   // Return default verse if no verse is found for today
   if (!verses[dateKey]) {
