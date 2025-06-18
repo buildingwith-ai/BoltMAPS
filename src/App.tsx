@@ -87,7 +87,7 @@ function App() {
               label="Share the Story:"
               value={story}
               onChange={setStory}
-              placeholder="Type your story here..."
+              placeholder="Click below to share your asnwers with a friend..."
             />
             
             <div className="flex justify-center mt-8">
