@@ -74,7 +74,7 @@ export const generateShareableImage = async (data: ReflectionData): Promise<stri
     ctx.font = '18px sans-serif';
     ctx.fillStyle = '#333';
     
-    const contentLineCount = wrapText(content || '[No response]', 50, currentY, 700, 25);
+    const contentLineCount = wrapText(content || ' ', 50, currentY, 700, 25);
     currentY += contentLineCount * 25 + 40;
   };
   
