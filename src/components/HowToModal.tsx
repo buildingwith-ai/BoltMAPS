@@ -71,7 +71,7 @@ const HowToModal: React.FC<HowToModalProps> = ({ isOpen, onClose }) => {
             <li className="flex items-start">
               <div className="bg-blue-100 text-blue-800 font-bold rounded-full h-8 w-8 flex items-center justify-center mt-0.5 mr-3">6</div>
               <div>
-                <p className="font-medium"><span className="text-purple-600">Share the Story:</span> Tell somebody about your story about the verse, your paraphrase, and your action.</p>
+                <p className="font-medium"><span className="text-purple-600">Share the Story:</span> Tell somebody about the verse, your paraphrase, and your action.</p>
               </div>
             </li>
           </ul>
