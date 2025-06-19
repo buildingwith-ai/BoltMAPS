@@ -84,7 +84,7 @@ function App() {
             
             <ReflectionInput
               id="story"
-              label="Share the Story:"
+              label="Share With A Friend:"
               value={story}
               onChange={setStory}
               placeholder="Click below to share your answers with a friend."
