@@ -81,7 +81,7 @@ export const generateShareableImage = async (data: ReflectionData): Promise<stri
   addSection('Meaning/Paraphrase:', data.meaning);
   addSection('Action: By God\'s grace I will...', data.action);
   addSection('Prayer: Jesus,', data.prayer);
-  addSection('Share the Story:', data.story);
+  addSection('Share With A Friend:', data.story);
   
   ctx.fillStyle = '#1e3a5f';
   ctx.fillRect(0, canvas.height - 60, canvas.width, 60);
