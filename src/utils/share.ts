@@ -20,7 +20,7 @@ export const generateShareableImage = async (data: ReflectionData): Promise<stri
   }
   
   canvas.width = 800;
-  canvas.height = 1000;
+  canvas.height = 900; // Reduced height since we removed a section
   
   ctx.fillStyle = '#f8f9fa';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -81,7 +81,6 @@ export const generateShareableImage = async (data: ReflectionData): Promise<stri
   addSection('Meaning/Paraphrase:', data.meaning);
   addSection('Action: By God\'s grace I will...', data.action);
   addSection('Prayer: Jesus,', data.prayer);
-  addSection('Share With A Friend:', data.story);
   
   ctx.fillStyle = '#1e3a5f';
   ctx.fillRect(0, canvas.height - 60, canvas.width, 60);
