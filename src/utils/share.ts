@@ -19,21 +19,71 @@ export const generateShareableImage = async (data: ReflectionData): Promise<stri
     throw new Error('Could not create canvas context');
   }
   
+  // Set initial canvas width
   canvas.width = 800;
-  canvas.height = 900; // Reduced height since we removed a section
   
+  // Helper function to measure text height
+  const measureTextHeight = (text: string, maxWidth: number, lineHeight: number): number => {
+    if (!text.trim()) return lineHeight; // Return minimum height for empty text
+    
+    const words = text.split(' ');
+    let line = '';
+    let lineCount = 0;
+    
+    for (let n = 0; n < words.length; n++) {
+      const testLine = line + words[n] + ' ';
+      const metrics = ctx.measureText(testLine);
+      const testWidth = metrics.width;
+      
+      if (testWidth > maxWidth && n > 0) {
+        lineCount++;
+        line = words[n] + ' ';
+      } else {
+        line = testLine;
+      }
+    }
+    lineCount++; // Add the last line
+    
+    return lineCount * lineHeight;
+  };
+  
+  // Calculate required heights for each section
+  const headerHeight = 160;
+  const sectionSpacing = 40;
+  const footerHeight = 60;
+  const padding = 40;
+  
+  // Set fonts for measurement
+  ctx.font = 'italic 18px serif';
+  const verseHeight = measureTextHeight(`"${data.verse.text}"`, 700, 25) + 40;
+  
+  ctx.font = '18px sans-serif';
+  const meaningHeight = 30 + measureTextHeight(data.meaning || ' ', 700, 25) + sectionSpacing;
+  const actionHeight = 30 + measureTextHeight(data.action || ' ', 700, 25) + sectionSpacing;
+  const prayerHeight = 30 + measureTextHeight(data.prayer || ' ', 700, 25) + sectionSpacing;
+  
+  // Calculate total height needed
+  const totalHeight = headerHeight + verseHeight + meaningHeight + actionHeight + prayerHeight + footerHeight + padding;
+  
+  // Set canvas height to fit content
+  canvas.height = Math.max(totalHeight, 500); // Minimum height of 500px
+  
+  // Fill background
   ctx.fillStyle = '#f8f9fa';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   
+  // Header background
   ctx.fillStyle = '#1e3a5f';
   ctx.fillRect(0, 0, canvas.width, 160);
   
   ctx.textAlign = 'center';
   
+  // Verse reference
   ctx.font = 'bold 32px serif';
   ctx.fillStyle = 'white';
   ctx.fillText(data.verse.reference, canvas.width / 2, 60);
   
+  // Verse text
   ctx.font = 'italic 18px serif';
   ctx.fillStyle = 'white';
   
@@ -58,10 +108,10 @@ export const generateShareableImage = async (data: ReflectionData): Promise<stri
     }
     
     ctx.fillText(line, x, y + (lineCount * lineHeight));
-    return lineCount;
+    return lineCount + 1;
   };
   
-  const verseLineCount = wrapText(`"${data.verse.text}"`, canvas.width / 2, 100, 700, 25);
+  wrapText(`"${data.verse.text}"`, canvas.width / 2, 100, 700, 25);
   let currentY = 160 + 40;
   
   const addSection = (title: string, content: string) => {
@@ -82,6 +132,7 @@ export const generateShareableImage = async (data: ReflectionData): Promise<stri
   addSection('Action: By God\'s grace I will...', data.action);
   addSection('Prayer: Jesus,', data.prayer);
   
+  // Footer at the bottom
   ctx.fillStyle = '#1e3a5f';
   ctx.fillRect(0, canvas.height - 60, canvas.width, 60);
   ctx.fillStyle = 'white';
