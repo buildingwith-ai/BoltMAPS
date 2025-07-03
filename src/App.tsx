@@ -11,7 +11,6 @@ function App() {
   const [meaning, setMeaning] = useState('');
   const [action, setAction] = useState('');
   const [prayer, setPrayer] = useState('');
-  const [story, setStory] = useState('');
   const [shareModalOpen, setShareModalOpen] = useState(false);
   const [howToModalOpen, setHowToModalOpen] = useState(false);
   const [shareableImage, setShareableImage] = useState('');
@@ -27,7 +26,7 @@ function App() {
         meaning,
         action,
         prayer,
-        story
+        story: '' // Empty since we removed the story section
       });
       setShareableImage(imageUrl);
       setShareModalOpen(true);
@@ -82,14 +81,6 @@ function App() {
               placeholder="Type your prayer here..."
             />
             
-            <ReflectionInput
-              id="story"
-              label="Share With A Friend:"
-              value={story}
-              onChange={setStory}
-              placeholder="Click below to share your answers with a friend."
-            />
-            
             <div className="flex justify-center mt-8">
               <button
                 onClick={handleShare}
@@ -101,7 +92,7 @@ function App() {
                 `}
               >
                 <Share2 size={20} className="mr-2" />
-                {isGeneratingImage ? 'Generating...' : 'Share'}
+                {isGeneratingImage ? 'Generating...' : 'Share With A Friend'}
               </button>
             </div>
           </div>
