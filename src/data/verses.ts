@@ -314,6 +314,161 @@ const verses: { [key: string]: Verse } = {
     reference: "Acts 1:8",
     text: "But you will receive power when the Holy Spirit has come upon you, and you will be my witnesses in Jerusalem and in all Judea and Samaria, and to the end of the earth.",
     dateLabel: "July 31"
+  },
+  '2025-08-01': {
+    reference: "John 13:34",
+    text: "I give you a new command: Love one another. Just as I have loved you, you are also to love one another.",
+    dateLabel: "August 1"
+  },
+  '2025-08-02': {
+    reference: "Romans 12:10",
+    text: "Love one another deeply as brothers and sisters. Take the lead in honoring one another.",
+    dateLabel: "August 2"
+  },
+  '2025-08-03': {
+    reference: "Galatians 5:13",
+    text: "Serve one another through love.",
+    dateLabel: "August 3"
+  },
+  '2025-08-04': {
+    reference: "Ephesians 4:32",
+    text: "Be kind and compassionate to one another, forgiving one another, just as God also forgave you in Christ.",
+    dateLabel: "August 4"
+  },
+  '2025-08-05': {
+    reference: "1 Thessalonians 5:11",
+    text: "Encourage one another and build each other up as you are already doing.",
+    dateLabel: "August 5"
+  },
+  '2025-08-06': {
+    reference: "Hebrews 10:24",
+    text: "Let us watch out for one another to provoke love and good works.",
+    dateLabel: "August 6"
+  },
+  '2025-08-07': {
+    reference: "1 Peter 4:9",
+    text: "Be hospitable to one another without complaining.",
+    dateLabel: "August 7"
+  },
+  '2025-08-08': {
+    reference: "James 5:16",
+    text: "Confess your sins to one another and pray for one another, so that you may be healed.",
+    dateLabel: "August 8"
+  },
+  '2025-08-09': {
+    reference: "Romans 15:7",
+    text: "Accept one another, just as Christ also accepted you, to the glory of God.",
+    dateLabel: "August 9"
+  },
+  '2025-08-10': {
+    reference: "Colossians 3:13",
+    text: "Bearing with one another and forgiving one another if anyone has a grievance against another.",
+    dateLabel: "August 10"
+  },
+  '2025-08-11': {
+    reference: "Galatians 6:2",
+    text: "Carry one another’s burdens; in this way you will fulfill the law of Christ.",
+    dateLabel: "August 11"
+  },
+  '2025-08-12': {
+    reference: "Ephesians 5:21",
+    text: "Submitting to one another in the fear of Christ.",
+    dateLabel: "August 12"
+  },
+  '2025-08-13': {
+    reference: "1 Peter 3:8",
+    text: "Be like-minded and sympathetic, love one another, and be compassionate and humble.",
+    dateLabel: "August 13"
+  },
+  '2025-08-14': {
+    reference: "Romans 14:19",
+    text: "Pursue what promotes peace and what builds up one another.",
+    dateLabel: "August 14"
+  },
+  '2025-08-15': {
+    reference: "1 John 4:11",
+    text: "Dear friends, if God loved us in this way, we also must love one another.",
+    dateLabel: "August 15"
+  },
+  '2025-08-16': {
+    reference: "Philippians 2:3",
+    text: "Do nothing out of selfish ambition or conceit, but in humility consider others as more important than yourselves.",
+    dateLabel: "August 16"
+  },
+  '2025-08-17': {
+    reference: "1 Thessalonians 5:15",
+    text: "See to it that no one repays evil for evil to anyone, but always pursue what is good for one another.",
+    dateLabel: "August 17"
+  },
+  '2025-08-18': {
+    reference: "Hebrews 3:13",
+    text: "Encourage each other daily, while it is still called today, so that none of you is hardened by sin’s deception.",
+    dateLabel: "August 18"
+  },
+  '2025-08-19': {
+    reference: "Romans 12:16",
+    text: "Live in harmony with one another. Do not be proud; instead, associate with the humble.",
+    dateLabel: "August 19"
+  },
+  '2025-08-20': {
+    reference: "1 Peter 4:10",
+    text: "Each one, as he has received a gift, use it to serve others, as good stewards of the varied grace of God.",
+    dateLabel: "August 20"
+  },
+  '2025-08-21': {
+    reference: "Ephesians 4:2",
+    text: "With all humility and gentleness, with patience, bearing with one another in love.",
+    dateLabel: "August 21"
+  },
+  '2025-08-22': {
+    reference: "Colossians 3:16",
+    text: "Let the word of Christ dwell richly among you, teaching and admonishing one another in all wisdom.",
+    dateLabel: "August 22"
+  },
+  '2025-08-23': {
+    reference: "1 Thessalonians 4:18",
+    text: "Comfort one another with these words.",
+    dateLabel: "August 23"
+  },
+  '2025-08-24': {
+    reference: "Romans 15:5",
+    text: "May the God of endurance and encouragement grant you to live in harmony with one another.",
+    dateLabel: "August 24"
+  },
+  '2025-08-25': {
+    reference: "Galatians 5:26",
+    text: "Let us not become conceited, provoking one another, envying one another.",
+    dateLabel: "August 25"
+  },
+  '2025-08-26': {
+    reference: "James 4:11",
+    text: "Don’t criticize one another, brothers and sisters.",
+    dateLabel: "August 26"
+  },
+  '2025-08-27': {
+    reference: "1 John 3:11",
+    text: "This is the message you have heard from the beginning: We should love one another.",
+    dateLabel: "August 27"
+  },
+  '2025-08-28': {
+    reference: "Romans 12:5",
+    text: "In Christ we who are many are one body, and individually members of one another.",
+    dateLabel: "August 28"
+  },
+  '2025-08-29': {
+    reference: "Ephesians 5:19",
+    text: "Speaking to one another in psalms, hymns, and spiritual songs, singing and making music with your heart to the Lord.",
+    dateLabel: "August 29"
+  },
+  '2025-08-30': {
+    reference: "1 Corinthians 12:25",
+    text: "So that there would be no division in the body, but that the members would have the same concern for each other.",
+    dateLabel: "August 30"
+  },
+  '2025-08-31': {
+    reference: "John 15:12",
+    text: "This is my command: Love one another as I have loved you.",
+    dateLabel: "August 31"
   }
 };
 
