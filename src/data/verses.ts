@@ -469,6 +469,156 @@ const verses: { [key: string]: Verse } = {
     reference: "John 15:12",
     text: "This is my command: Love one another as I have loved you.",
     dateLabel: "August 31"
+  },
+  '2025-09-01': {
+    reference: "Leviticus 19:18",
+    text: "Do not take revenge or bear a grudge against members of your community, but love your neighbor as yourself; I am the LORD.",
+    dateLabel: "September 1"
+  },
+  '2025-09-02': {
+    reference: "Micah 6:8",
+    text: "Mankind, he has told each of you what is good and what it is the LORD requires of you: to act justly, to love faithfulness, and to walk humbly with your God.",
+    dateLabel: "September 2"
+  },
+  '2025-09-03': {
+    reference: "Proverbs 17:17",
+    text: "A friend loves at all times, and a brother is born for a difficult time.",
+    dateLabel: "September 3"
+  },
+  '2025-09-04': {
+    reference: "Zechariah 7:9",
+    text: "This is what the LORD of Armies says: Administer true justice. Show faithful love and compassion to one another.",
+    dateLabel: "September 4"
+  },
+  '2025-09-05': {
+    reference: "Exodus 22:21",
+    text: "You must not exploit a resident alien or oppress him, since you were resident aliens in the land of Egypt.",
+    dateLabel: "September 5"
+  },
+  '2025-09-06': {
+    reference: "Psalm 133:1",
+    text: "How good and pleasant it is when brothers live together in harmony!",
+    dateLabel: "September 6"
+  },
+  '2025-09-07': {
+    reference: "Deuteronomy 15:11",
+    text: "For there will never cease to be poor people in the land; that is why I am commanding you, ‘Open your hand willingly to your poor and needy brother in your land.’",
+    dateLabel: "September 7"
+  },
+  '2025-09-08': {
+    reference: "Proverbs 3:27",
+    text: "When it is in your power, don’t withhold good from the one to whom it belongs.",
+    dateLabel: "September 8"
+  },
+  '2025-09-09': {
+    reference: "Isaiah 1:17",
+    text: "Learn to do what is good. Pursue justice. Correct the oppressor. Defend the rights of the fatherless. Plead the widow’s cause.",
+    dateLabel: "September 9"
+  },
+  '2025-09-10': {
+    reference: "Leviticus 19:15",
+    text: "Do not act unjustly when deciding a case. Do not be partial to the poor or give preference to the rich; judge your neighbor fairly.",
+    dateLabel: "September 10"
+  },
+  '2025-09-11': {
+    reference: "Proverbs 12:18",
+    text: "There is one who speaks rashly, like a piercing sword; but the tongue of the wise brings healing.",
+    dateLabel: "September 11"
+  },
+  '2025-09-12': {
+    reference: "Exodus 20:16",
+    text: "Do not give false testimony against your neighbor.",
+    dateLabel: "September 12"
+  },
+  '2025-09-13': {
+    reference: "Psalm 15:3",
+    text: "Who does not slander with his tongue, who does not harm his friend or discredit his neighbor.",
+    dateLabel: "September 13"
+  },
+  '2025-09-14': {
+    reference: "Proverbs 11:25",
+    text: "A generous person will be enriched, and the one who gives a drink of water will receive water.",
+    dateLabel: "September 14"
+  },
+  '2025-09-15': {
+    reference: "Jeremiah 22:3",
+    text: "This is what the LORD says: Administer justice and righteousness. Rescue the victim of robbery from his oppressor. Don’t exploit or brutalize the resident alien, the fatherless, or the widow.",
+    dateLabel: "September 15"
+  },
+  '2025-09-16': {
+    reference: "Proverbs 15:1",
+    text: "A gentle answer turns away anger, but a harsh word stirs up wrath.",
+    dateLabel: "September 16"
+  },
+  '2025-09-17': {
+    reference: "Deuteronomy 24:17",
+    text: "Do not deny justice to a resident alien or fatherless child, and do not take a widow’s garment as security.",
+    dateLabel: "September 17"
+  },
+  '2025-09-18': {
+    reference: "Proverbs 19:17",
+    text: "Kindness to the poor is a loan to the LORD, and he will give a reward to the lender.",
+    dateLabel: "September 18"
+  },
+  '2025-09-19': {
+    reference: "Ecclesiastes 4:9–10",
+    text: "Two are better than one because they have a good reward for their efforts. For if either falls, his companion can lift him up.",
+    dateLabel: "September 19"
+  },
+  '2025-09-20': {
+    reference: "Leviticus 25:35",
+    text: "If your brother becomes destitute and cannot sustain himself among you, you must support him as a resident alien or temporary resident, so that he can continue to live among you.",
+    dateLabel: "September 20"
+  },
+  '2025-09-21': {
+    reference: "Proverbs 16:24",
+    text: "Pleasant words are a honeycomb: sweet to the taste and health to the body.",
+    dateLabel: "September 21"
+  },
+  '2025-09-22': {
+    reference: "Isaiah 58:7",
+    text: "Is it not to share your bread with the hungry, to bring the poor and homeless into your house, to clothe the naked when you see him, and not to ignore your own flesh and blood?",
+    dateLabel: "September 22"
+  },
+  '2025-09-23': {
+    reference: "Proverbs 22:9",
+    text: "A generous person will be blessed, for he shares his food with the poor.",
+    dateLabel: "September 23"
+  },
+  '2025-09-24': {
+    reference: "Psalm 41:1",
+    text: "Happy is one who is considerate of the poor; the LORD will save him in a day of adversity.",
+    dateLabel: "September 24"
+  },
+  '2025-09-25': {
+    reference: "Proverbs 25:21",
+    text: "If your enemy is hungry, give him food to eat, and if he is thirsty, give him water to drink.",
+    dateLabel: "September 25"
+  },
+  '2025-09-26': {
+    reference: "Deuteronomy 5:20",
+    text: "Do not give dishonest testimony against your neighbor.",
+    dateLabel: "September 26"
+  },
+  '2025-09-27': {
+    reference: "Proverbs 14:21",
+    text: "The one who despises his neighbor sins, but the one who shows kindness to the poor will be happy.",
+    dateLabel: "September 27"
+  },
+  '2025-09-28': {
+    reference: "Job 31:16",
+    text: "If I have refused the wishes of the poor or let the widow’s eyes go blind, if I have eaten my few crumbs alone without sharing with the fatherless—",
+    dateLabel: "September 28"
+  },
+  '2025-09-29': {
+    reference: "Proverbs 29:7",
+    text: "The righteous person knows the rights of the poor, but the wicked one does not understand these concerns.",
+    dateLabel: "September 29"
+  },
+  '2025-09-30': {
+    reference: "Amos 5:24",
+    text: "But let justice flow like water, and righteousness, like an unfailing stream.",
+    dateLabel: "September 30"
   }
 };
 
