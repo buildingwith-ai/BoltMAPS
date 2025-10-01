@@ -619,7 +619,162 @@ const verses: { [key: string]: Verse } = {
     reference: "Amos 5:24",
     text: "But let justice flow like water, and righteousness, like an unfailing stream.",
     dateLabel: "September 30"
-  }
+  },
+  '2025-10-01': {
+  reference: "Romans 12:12",
+  text: "Rejoice in hope, be patient in tribulation, be constant in prayer.",
+  dateLabel: "October 1"
+},
+'2025-10-02': {
+  reference: "Colossians 3:13",
+  text: "Bear with one another and, if one has a complaint against another, forgive each other; as the Lord has forgiven you, so you also must forgive.",
+  dateLabel: "October 2"
+},
+'2025-10-03': {
+  reference: "James 1:19",
+  text: "Know this, my beloved brothers: let every person be quick to hear, slow to speak, and slow to anger;",
+  dateLabel: "October 3"
+},
+'2025-10-04': {
+  reference: "Hebrews 10:35",
+  text: "Therefore do not throw away your confidence, which has a great reward.",
+  dateLabel: "October 4"
+},
+'2025-10-05': {
+  reference: "Proverbs 3:5-6",
+  text: "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths.",
+  dateLabel: "October 5"
+},
+'2025-10-06': {
+  reference: "Philippians 4:6",
+  text: "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God.",
+  dateLabel: "October 6"
+},
+'2025-10-07': {
+  reference: "1 Peter 5:7",
+  text: "Casting all your anxieties on him, because he cares for you.",
+  dateLabel: "October 7"
+},
+'2025-10-08': {
+  reference: "Galatians 6:9",
+  text: "And let us not grow weary of doing good, for in due season we will reap, if we do not give up.",
+  dateLabel: "October 8"
+},
+'2025-10-09': {
+  reference: "Ephesians 4:32",
+  text: "Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you.",
+  dateLabel: "October 9"
+},
+'2025-10-10': {
+  reference: "1 Corinthians 16:13",
+  text: "Be watchful, stand firm in the faith, act like men, be strong.",
+  dateLabel: "October 10"
+},
+'2025-10-11': {
+  reference: "1 Timothy 6:11",
+  text: "But as for you, O man of God, flee these things. Pursue righteousness, godliness, faith, love, steadfastness, gentleness.",
+  dateLabel: "October 11"
+},
+'2025-10-12': {
+  reference: "1 Thessalonians 5:15",
+  text: "See that no one repays anyone evil for evil, but always seek to do good to one another and to everyone.",
+  dateLabel: "October 12"
+},
+'2025-10-13': {
+  reference: "Psalm 37:5",
+  text: "Commit your way to the Lord; trust in him, and he will act.",
+  dateLabel: "October 13"
+},
+'2025-10-14': {
+  reference: "Hebrews 12:1",
+  text: "...let us also, since we are surrounded by so great a cloud of witnesses, lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us,",
+  dateLabel: "October 14"
+},
+'2025-10-15': {
+  reference: "Luke 6:35",
+  text: "But love your enemies, and do good, and lend, expecting nothing in return, and your reward will be great, and you will be sons of the Most High, for he is kind to the ungrateful and the evil.",
+  dateLabel: "October 15"
+},
+'2025-10-16': {
+  reference: "1 Peter 1:13",
+  text: "Therefore, preparing your minds for action, and being sober-minded, set your hope fully on the grace that will be brought to you at the revelation of Jesus Christ.",
+  dateLabel: "October 16"
+},
+'2025-10-17': {
+  reference: "Psalm 146:5",
+  text: "Blessed is he whose help is the God of Jacob, whose hope is in the Lord his God,",
+  dateLabel: "October 17"
+},
+'2025-10-18': {
+  reference: "James 4:7",
+  text: "Submit yourselves therefore to God. Resist the devil, and he will flee from you.",
+  dateLabel: "October 18"
+},
+'2025-10-19': {
+  reference: "Matthew 6:33",
+  text: "But seek first the kingdom of God and his righteousness, and all these things will be added to you.",
+  dateLabel: "October 19"
+},
+'2025-10-20': {
+  reference: "Ephesians 4:29",
+  text: "Let no corrupting talk come out of your mouths, but only such as is good for building up, as fits the occasion, that it may give grace to those who hear.",
+  dateLabel: "October 20"
+},
+'2025-10-21': {
+  reference: "1 Corinthians 10:13",
+  text: "No temptation has overtaken you that is not common to man. God is faithful, and he will not let you be tempted beyond your ability, but with the temptation he will also provide the way of escape, that you may be able to endure it.",
+  dateLabel: "October 21"
+},
+'2025-10-22': {
+  reference: "1 Thessalonians 5:17-18",
+  text: "Pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.",
+  dateLabel: "October 22"
+},
+'2025-10-23': {
+  reference: "Isaiah 41:10",
+  text: "Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand.",
+  dateLabel: "October 23"
+},
+'2025-10-24': {
+  reference: "James 5:16",
+  text: "Therefore, confess your sins to one another and pray for one another, that you may be healed. The prayer of a righteous person has great power as it is working.",
+  dateLabel: "October 24"
+},
+'2025-10-25': {
+  reference: "Colossians 3:2",
+  text: "Set your minds on things that are above, not on things that are on earth.",
+  dateLabel: "October 25"
+},
+'2025-10-26': {
+  reference: "Romans 15:13",
+  text: "May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.",
+  dateLabel: "October 26"
+},
+'2025-10-27': {
+  reference: "Isaiah 40:31",
+  text: "But they who wait for the Lord shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint.",
+  dateLabel: "October 27"
+},
+'2025-10-28': {
+  reference: "Hebrews 13:5",
+  text: "Keep your life free from love of money, and be content with what you have, for he has said, “I will never leave you nor forsake you.”",
+  dateLabel: "October 28"
+},
+'2025-10-29': {
+  reference: "1 Corinthians 15:58",
+  text: "Therefore, my beloved brothers, be steadfast, immovable, always abounding in the work of the Lord, knowing that in the Lord your labor is not in vain.",
+  dateLabel: "October 29"
+},
+'2025-10-30': {
+  reference: "Romans 12:10",
+  text: "Love one another with brotherly affection. Outdo one another in showing honor.",
+  dateLabel: "October 30"
+},
+'2025-10-31': {
+  reference: "Hebrews 11:6",
+  text: "And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him.",
+  dateLabel: "October 31"
+}
 };
 
 export const getTodayVerse = (): Verse => {
