@@ -774,7 +774,157 @@ const verses: { [key: string]: Verse } = {
   reference: "Hebrews 11:6",
   text: "And without faith it is impossible to please him, for whoever would draw near to God must believe that he exists and that he rewards those who seek him.",
   dateLabel: "October 31"
-}
+},
+'2025-11-01': {
+  reference: "1 Thessalonians 5:18",
+  text: "Give thanks in all circumstances; for this is the will of God in Christ Jesus for you.",
+  dateLabel: "November 1"
+},
+'2025-11-02': {
+  reference: "Psalm 100:4",
+  text: "Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name!",
+  dateLabel: "November 2"
+},
+'2025-11-03': {
+  reference: "Colossians 3:17",
+  text: "And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him.",
+  dateLabel: "November 3"
+},
+'2025-11-04': {
+  reference: "Psalm 9:1",
+  text: "I will give thanks to the Lord with my whole heart; I will recount all of your wonderful deeds.",
+  dateLabel: "November 4"
+},
+'2025-11-05': {
+  reference: "Philippians 4:6",
+  text: "With thanksgiving let your requests be made known to God.",
+  dateLabel: "November 5"
+},
+'2025-11-06': {
+  reference: "Ephesians 5:20",
+  text: "Giving thanks always and for everything to God the Father in the name of our Lord Jesus Christ.",
+  dateLabel: "November 6"
+},
+'2025-11-07': {
+  reference: "Psalm 107:1",
+  text: "Oh give thanks to the Lord, for he is good, for his steadfast love endures forever!",
+  dateLabel: "November 7"
+},
+'2025-11-08': {
+  reference: "Colossians 4:2",
+  text: "Continue steadfastly in prayer, being watchful in it with thanksgiving.",
+  dateLabel: "November 8"
+},
+'2025-11-09': {
+  reference: "Psalm 28:7",
+  text: "The Lord is my strength and my shield; in him my heart trusts, and I am helped; my heart exults, and with my song I give thanks to him.",
+  dateLabel: "November 9"
+},
+'2025-11-10': {
+  reference: "1 Chronicles 16:34",
+  text: "Oh give thanks to the Lord, for he is good; for his steadfast love endures forever!",
+  dateLabel: "November 10"
+},
+'2025-11-11': {
+  reference: "Psalm 95:2",
+  text: "Let us come into his presence with thanksgiving; let us make a joyful noise to him with songs of praise!",
+  dateLabel: "November 11"
+},
+'2025-11-12': {
+  reference: "Hebrews 13:15",
+  text: "Let us continually offer up a sacrifice of praise to God, that is, the fruit of lips that acknowledge his name.",
+  dateLabel: "November 12"
+},
+'2025-11-13': {
+  reference: "Psalm 118:28–29",
+  text: "You are my God, and I will give thanks to you; you are my God; I will extol you. Oh give thanks to the Lord, for he is good; for his steadfast love endures forever!",
+  dateLabel: "November 13"
+},
+'2025-11-14': {
+  reference: "Jonah 2:9",
+  text: "But I with the voice of thanksgiving will sacrifice to you; what I have vowed I will pay. Salvation belongs to the Lord!",
+  dateLabel: "November 14"
+},
+'2025-11-15': {
+  reference: "Colossians 2:7",
+  text: "Rooted and built up in him and established in the faith, just as you were taught, abounding in thanksgiving.",
+  dateLabel: "November 15"
+},
+'2025-11-16': {
+  reference: "Psalm 136:1",
+  text: "Give thanks to the Lord, for he is good, for his steadfast love endures forever.",
+  dateLabel: "November 16"
+},
+'2025-11-17': {
+  reference: "2 Corinthians 9:11",
+  text: "You will be enriched in every way to be generous in every way, which through us will produce thanksgiving to God.",
+  dateLabel: "November 17"
+},
+'2025-11-18': {
+  reference: "Psalm 92:1",
+  text: "It is good to give thanks to the Lord, to sing praises to your name, O Most High.",
+  dateLabel: "November 18"
+},
+'2025-11-19': {
+  reference: "1 Timothy 4:4",
+  text: "For everything created by God is good, and nothing is to be rejected if it is received with thanksgiving.",
+  dateLabel: "November 19"
+},
+'2025-11-20': {
+  reference: "Psalm 30:12",
+  text: "That my glory may sing your praise and not be silent. O Lord my God, I will give thanks to you forever!",
+  dateLabel: "November 20"
+},
+'2025-11-21': {
+  reference: "Ephesians 1:16",
+  text: "I do not cease to give thanks for you, remembering you in my prayers.",
+  dateLabel: "November 21"
+},
+'2025-11-22': {
+  reference: "Psalm 50:14",
+  text: "Offer to God a sacrifice of thanksgiving, and perform your vows to the Most High.",
+  dateLabel: "November 22"
+},
+'2025-11-23': {
+  reference: "Daniel 2:23",
+  text: "To you, O God of my fathers, I give thanks and praise, for you have given me wisdom and might.",
+  dateLabel: "November 23"
+},
+'2025-11-24': {
+  reference: "Philippians 1:3",
+  text: "I thank my God in all my remembrance of you.",
+  dateLabel: "November 24"
+},
+'2025-11-25': {
+  reference: "Psalm 69:30",
+  text: "I will praise the name of God with a song; I will magnify him with thanksgiving.",
+  dateLabel: "November 25"
+},
+'2025-11-26': {
+  reference: "Colossians 3:15",
+  text: "And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful.",
+  dateLabel: "November 26"
+},
+'2025-11-27': {
+  reference: "Psalm 136:26",
+  text: "Give thanks to the God of heaven, for his steadfast love endures forever.",
+  dateLabel: "November 27"
+},
+'2025-11-28': {
+  reference: "2 Corinthians 4:15",
+  text: "For it is all for your sake, so that as grace extends to more and more people it may increase thanksgiving, to the glory of God.",
+  dateLabel: "November 28"
+},
+'2025-11-29': {
+  reference: "Psalm 145:10",
+  text: "All your works shall give thanks to you, O Lord, and all your saints shall bless you!",
+  dateLabel: "November 29"
+},
+'2025-11-30': {
+  reference: "Revelation 11:17",
+  text: "We give thanks to you, Lord God Almighty, who is and who was, for you have taken your great power and begun to reign.",
+  dateLabel: "November 30"
+},
 };
 
 export const getTodayVerse = (): Verse => {
