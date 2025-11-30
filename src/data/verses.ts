@@ -925,6 +925,161 @@ const verses: { [key: string]: Verse } = {
   text: "We give thanks to you, Lord God Almighty, who is and who was, for you have taken your great power and begun to reign.",
   dateLabel: "November 30"
 },
+'2025-12-01': {
+    reference: "Isaiah 9:2",
+    text: "The people who walked in darkness have seen a great light; those who dwelt in a land of deep darkness, on them has light shined.",
+    dateLabel: "December 1"
+  },
+  '2025-12-02': {
+    reference: "Isaiah 7:14",
+    text: "Therefore the Lord himself will give you a sign. Behold, the virgin shall conceive and bear a son, and shall call his name Immanuel.",
+    dateLabel: "December 2"
+  },
+  '2025-12-03': {
+    reference: "Isaiah 11:1",
+    text: "There shall come forth a shoot from the stump of Jesse, and a branch from his roots shall bear fruit.",
+    dateLabel: "December 3"
+  },
+  '2025-12-04': {
+    reference: "Isaiah 40:3",
+    text: "A voice cries: 'In the wilderness prepare the way of the Lord; make straight in the desert a highway for our God.'",
+    dateLabel: "December 4"
+  },
+  '2025-12-05': {
+    reference: "Isaiah 52:7",
+    text: "How beautiful upon the mountains are the feet of him who brings good news, who publishes peace, who brings good news of happiness, who publishes salvation, who says to Zion, 'Your God reigns.'",
+    dateLabel: "December 5"
+  },
+  '2025-12-06': {
+    reference: "Malachi 3:1",
+    text: "Behold, I send my messenger, and he will prepare the way before me. And the Lord whom you seek will suddenly come to his temple; and the messenger of the covenant in whom you delight, behold, he is coming, says the Lord of hosts.",
+    dateLabel: "December 6"
+  },
+  '2025-12-07': {
+    reference: "Matthew 1:21",
+    text: "She will bear a son, and you shall call his name Jesus, for he will save his people from their sins.",
+    dateLabel: "December 7"
+  },
+  '2025-12-08': {
+    reference: "Matthew 2:6",
+    text: "'And you, O Bethlehem, in the land of Judah, are by no means least among the rulers of Judah; for from you shall come a ruler who will shepherd my people Israel.'",
+    dateLabel: "December 8"
+  },
+  '2025-12-09': {
+    reference: "Luke 1:32",
+    text: "He will be great and will be called the Son of the Most High. And the Lord God will give to him the throne of his father David.",
+    dateLabel: "December 9"
+  },
+  '2025-12-10': {
+    reference: "Luke 1:38",
+    text: "And Mary said, 'Behold, I am the servant of the Lord; let it be to me according to your word.' And the angel departed from her.",
+    dateLabel: "December 10"
+  },
+  '2025-12-11': {
+    reference: "Luke 1:46-47",
+    text: "And Mary said, 'My soul magnifies the Lord, and my spirit rejoices in God my Savior.'",
+    dateLabel: "December 11"
+  },
+  '2025-12-12': {
+    reference: "Luke 1:68",
+    text: "'Blessed be the Lord God of Israel, for he has visited and redeemed his people.'",
+    dateLabel: "December 12"
+  },
+  '2025-12-13': {
+    reference: "Luke 2:10",
+    text: "And the angel said to them, 'Fear not, for behold, I bring you good news of great joy that will be for all the people.'",
+    dateLabel: "December 13"
+  },
+  '2025-12-14': {
+    reference: "Luke 2:11",
+    text: "For unto you is born this day in the city of David a Savior, who is Christ the Lord.",
+    dateLabel: "December 14"
+  },
+  '2025-12-15': {
+    reference: "Luke 2:14",
+    text: "'Glory to God in the highest, and on earth peace among those with whom he is pleased!'",
+    dateLabel: "December 15"
+  },
+  '2025-12-16': {
+    reference: "John 1:14",
+    text: "And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.",
+    dateLabel: "December 16"
+  },
+  '2025-12-17': {
+    reference: "John 1:29",
+    text: "The next day he saw Jesus coming toward him, and said, 'Behold, the Lamb of God, who takes away the sin of the world!'",
+    dateLabel: "December 17"
+  },
+  '2025-12-18': {
+    reference: "Romans 15:13",
+    text: "May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.",
+    dateLabel: "December 18"
+  },
+  '2025-12-19': {
+    reference: "Titus 2:11",
+    text: "For the grace of God has appeared, bringing salvation for all people.",
+    dateLabel: "December 19"
+  },
+  '2025-12-20': {
+    reference: "Philippians 2:7",
+    text: "But emptied himself, by taking the form of a servant, being born in the likeness of men.",
+    dateLabel: "December 20"
+  },
+  '2025-12-21': {
+    reference: "2 Corinthians 8:9",
+    text: "For you know the grace of our Lord Jesus Christ, that though he was rich, yet for your sake he became poor, so that you by his poverty might become rich.",
+    dateLabel: "December 21"
+  },
+  '2025-12-22': {
+    reference: "Galatians 4:4-5",
+    text: "But when the fullness of time had come, God sent forth his Son, born of woman, born under the law, to redeem those who were under the law, so that we might receive adoption as sons.",
+    dateLabel: "December 22"
+  },
+  '2025-12-23': {
+    reference: "Hebrews 1:1-2",
+    text: "Long ago, at many times and in many ways, God spoke to our fathers by the prophets, but in these last days he has spoken to us by his Son, whom he appointed the heir of all things, through whom also he created the world.",
+    dateLabel: "December 23"
+  },
+  '2025-12-24': {
+    reference: "Micah 5:2",
+    text: "But you, O Bethlehem Ephrathah, who are too little to be among the clans of Judah, from you shall come forth for me one who is to be ruler in Israel, whose coming forth is from of old, from ancient days.",
+    dateLabel: "December 24"
+  },
+  '2025-12-25': {
+    reference: "John 3:16",
+    text: "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.",
+    dateLabel: "December 25"
+  },
+  '2025-12-26': {
+    reference: "1 Timothy 3:16",
+    text: "Great indeed, we confess, is the mystery of godliness: He was manifested in the flesh, vindicated by the Spirit, seen by angels, proclaimed among the nations, believed on in the world, taken up in glory.",
+    dateLabel: "December 26"
+  },
+  '2025-12-27': {
+    reference: "Colossians 1:15",
+    text: "He is the image of the invisible God, the firstborn of all creation.",
+    dateLabel: "December 27"
+  },
+  '2025-12-28': {
+    reference: "Revelation 22:20",
+    text: "He who testifies to these things says, 'Surely I am coming soon.' Amen. Come, Lord Jesus!",
+    dateLabel: "December 28"
+  },
+  '2025-12-29': {
+    reference: "1 John 4:9",
+    text: "In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him.",
+    dateLabel: "December 29"
+  },
+  '2025-12-30': {
+    reference: "James 5:8",
+    text: "You also, be patient. Establish your hearts, for the coming of the Lord is at hand.",
+    dateLabel: "December 30"
+  },
+  '2025-12-31': {
+    reference: "Psalm 90:12",
+    text: "So teach us to number our days that we may get a heart of wisdom.",
+    dateLabel: "December 31"
+  },
 };
 
 export const getTodayVerse = (): Verse => {
